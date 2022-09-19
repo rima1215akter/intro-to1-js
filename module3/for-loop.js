@@ -1,6 +1,6 @@
-for(var watchPrice=0; watchPrice<5; watchPrice++){
-    console.log(watchPrice);
-}
+// for(var watchPrice=0; watchPrice<5; watchPrice++){
+//     console.log(watchPrice);
+// }
 
 for(i=1; i<=10; i++){
     console.log(i);
