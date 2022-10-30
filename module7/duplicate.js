@@ -21,7 +21,7 @@ console.log(uniqueNames); */
 
 
 const numbers = [1, 2, 3, 4, 5, 6, 77, 88, 4, 76, 3, 5];
-console.log('length of array', numbers.length);
+// console.log('length of array', numbers.length);
 function removeDuplicate(numbers){
     const unique = [];
     for(const element of numbers){
@@ -35,4 +35,4 @@ function removeDuplicate(numbers){
 }
 
 const uniqueNumbers = removeDuplicate(numbers);
-console.log(uniqueNumbers);
+console.log('now', uniqueNumbers);
