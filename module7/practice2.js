@@ -92,17 +92,22 @@ console.log(bestFriend(friends));
 }
 
 console.log(longestStr(["ab", "a", "abcd"]))
- //array big size string return
- /*  const friends =['Mishu', 'Lima', 'Shahajadi', 'shimu'];
 
-
-  function bestFriend(arr, max){
-    for(let i=0; i<arr.length; i++){
-        const friend = friends;
-        return friend;
-    }
-    
-  }
-  var max = Math.max(['Mishu', 'Lima', 'Shahajadi', 'shimu']);
-  console.log(max); */
+//or
+/* const str = "Hardships often prepare ordinary people for an extraordinary destiny";
+const largestSmallest = str => {
+   const strArr = str.split(" ");
+   let min = strArr[0];
+   let max = strArr[0];
+   for(let i = 1; i < strArr.length; i++){
+      if(strArr[i].length < min.length){
+         min = strArr[i];
+      };
+      if(strArr[i].length > max.length){
+         max = strArr[i];
+      };
+   };
+   return [min, max];
+};
+console.log(largestSmallest(str)); */
  
