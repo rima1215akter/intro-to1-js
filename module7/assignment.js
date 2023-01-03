@@ -30,26 +30,45 @@ function deliveryCost(number){
     const deliveryDensitySecondNumber = 80;
     const deliveryDensityThirdNumber = 50;
 
-}
+    if(number<=100){
+      const count = number*deliverDensityFirstNumber;
+      return count;
+    }
+    else if(number<=200){
+      const firstDelivery = 100*deliverDensityFirstNumber;
+      const restNumber = number-100;
+      const secondDelivery = restNumber*deliverDensityFirstNumber;
+      const totalDelivery = firstDelivery+secondDelivery;
+      return totalDelivery;
+    }
+    else{
+      const firstDelivery = 100*deliverDensityFirstNumber;
+      const secondDelivery = 100*deliveryDensitySecondNumber;
+      const restNumber = number-200;
+      const restDeliveryNumber = restNumber*deliveryDensityThirdNumber;
+      const totalDelivery = firstDelivery+secondDelivery+restDeliveryNumber;
+      return totalDelivery;
+    }
 
+}
+const delivery = deliveryCost(25);
+console.log(delivery);
 
 //problem-4: perfectFriend
-function maxCharacter(str){
-    const charMap = {};
-    let max = 0, maxChar = "";
-  
-    for(let char of str){
-      charMap[char] = charMap[char] + 1 || 1;
-    }
-  
-    for(let char in charMap){
-      if(charMap[char] > max){
-        max = charMap[char];
-        maxChar = char;
+
+/* const Friend =['Mishu', 'Lima', 'Shahajadi', 'shimu'];
+function perfectFriend(arr){
+    let charMap = [];
+    let max = 5;
+    for(let i=0; i<arr.length; i++){
+      const element = arr[i];
+      console.log(element);
+      if( arr.length== max){
+        charMap.push(arr[i]);
       }
     }
     
-    return maxChar;
+    return charMap;
   }
-const largestCharcter = maxCharacter('Mishu', 'Lima', 'Shahajadi', 'shimu');
-console.log(largestCharcter); 
+const largestCharcter = perfectFriend(Friend);
+console.log(largestCharcter);  */
