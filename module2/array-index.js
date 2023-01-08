@@ -1,5 +1,5 @@
 var numbers = [45, 98, 65, 74, 34, 78];
-var index = numbers.indexOf(65);
+var index = numbers.indexOf(78);
 console.log(index);
 // console.log(numbers.indexOf(34));
 

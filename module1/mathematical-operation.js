@@ -45,8 +45,8 @@ var firstNumber = 0.2;
 var secondNumber = 0.4;
 var total = firstNumber+secondNumber;
 // String
-// total = total.toFixed(2);
+ total = total.toFixed(3);
 // Number
 // total = parseFloat(total);
-// console.log(total);
-console.log(parseFloat(total.toFixed(2)));
+ console.log('total', total);
+// console.log(parseFloat(total.toFixed(2)));
