@@ -14,11 +14,14 @@ console.log(largest);
 
 
 function smallestElement(numbers){
-    let = numbers[0];
+    let min = numbers[0];
     for(let i=0; i<=numbers.length; i++){
         const element = numbers[i];
         if(element<min){
             min = element;
         }
     }
+    return min;
 }
+const smallest = smallestElement(5);
+console.log(smallest);

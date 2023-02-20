@@ -18,7 +18,7 @@ var numbers = [12, 34, 23, 45, 67, 89, 11, 90, 102];
 
 for(var i=0; i<numbers.length; i++){
     var number = numbers[i];
-    console.log(number);
+    console.log('number', number);
     if(number>45){
         break;
     }

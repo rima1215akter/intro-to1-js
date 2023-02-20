@@ -1,4 +1,4 @@
-const number = 4.53;
+const number = 4.6;
 const number1 = -3;
 const output = Math.ceil(number);
 const output1 = Math.floor(number);

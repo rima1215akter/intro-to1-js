@@ -1,6 +1,11 @@
 //variable
 var mobilePhone = 33;
 
+//variable
+var bangladeshLaptop = 34;
+
+var bangladeshLaptops =['Dell', 'Walton', 'Samsung', 'Lenovo', 'Apple', 'Macbook', 'MSI', 'Asus', 'HP', 'Xiaomi'];
+console.log(bangladeshLaptops.length);
 //array
 var mobilePhones = ['Vivo', 'Xiamoi', 'Walton', 'Symphoni', 'Samsung', 'iPhone', 'itel'];
 console.log(mobilePhones.length);
@@ -9,7 +14,6 @@ for(i=0; i<mobilePhones.length; i++){
     var mobilePhone = mobilePhones[i];
     console.log(mobilePhone);
 }
-
 // condition
 if(mobilePhones.indexOf('Nokia') == -1){
     console.log('Buy Nokia');

@@ -58,14 +58,14 @@ console.log(largest1);
 
 
 //find smallest number
-function smallestNumber(numbe1, number2){
-    if(numbe1>number2){
+function smallestNumber(number1, number2){
+    if(number1>number2){
         return number2;
     }
     else{
-        return numbe1;
+        return number1;
     }
 }
 
-const smallest = smallestNumber(11, 23);
+const smallest = smallestNumber(28, 23);
 console.log(smallest);

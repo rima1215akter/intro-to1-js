@@ -15,12 +15,12 @@ else{
 // array
 
 var tourDestinations = ['coxbazar', 'nepal', 'vutan', 'paris'];
-tourDestinations.indexOf('vutan');
+// tourDestinations.indexOf('vutan');
 console.log(tourDestinations.indexOf('vutan'));
 
-var fourDestination = tourDestinations[2];
+var fourDestination = tourDestinations[3];
 console.log(fourDestination);
-tourDestinations[1] = 'Bangladesh';
+tourDestinations[0] = 'Bangladesh';
 console.log(tourDestinations);
 
 // conditionals

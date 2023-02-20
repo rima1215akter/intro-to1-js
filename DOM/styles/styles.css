@@ -1,0 +1,12 @@
+h1{
+    color: tomato;
+}
+.large-text{
+    font-size: 2em;
+}
+.text-center{
+    text-align: center;
+}
+.yellow-bg{
+    background-color: beige !important;
+}

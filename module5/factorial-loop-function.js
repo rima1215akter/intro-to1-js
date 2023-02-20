@@ -39,17 +39,23 @@ const myFactorial1 = getFactorial1(4);
 console.log(myFactorial1);
 
 // while loop decremental
-function getFactorial2(number){
+/* var i=5;
+while (i>=1){
+console.log("Hello World");
+i--;
+} */
+
+function getFactorial2(number2){
     let factorial = 1;
-    let i =number;
-    while(i>=1){
+    let i =number2;
+    while(i>=7){
         factorial = factorial*i;
         i--;
     }
     return factorial;
 }
-const myFactorial2 = getFactorial2(4);
-console.log(myFactorial2);
+const myFactorial2 = getFactorial2(8);
+console.log('myFactorial2', myFactorial2);
 
 //for loop decremental
 function getFactorial3(number){

@@ -1,12 +1,9 @@
-var i = 0;
-while(i<=12){
+var i = 17;
+while(i>=12){
     console.log(i);
-    i++;
+    i--;
 }
 
-for(var i=0; i<4; i++){
-    console.log(i);
-}
 
 var favoriteSinger = 'Atif Aslam'
 

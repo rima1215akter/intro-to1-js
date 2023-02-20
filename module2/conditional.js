@@ -20,7 +20,7 @@ if (chickenPrice<myMoney){
 else{
     console.log('not buy chicken');
 }
-if (chickenPrice=myMoney){
+if (chickenPrice==myMoney){
     console.log('buy chicken');
 }
 else{

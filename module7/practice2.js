@@ -7,13 +7,13 @@ function inchToFeet(inch){
 const findFeet = inchToFeet(12);
 console.log(findFeet);
 
-/* function feetToInch(feet){
+function feetToInch(feet){
     const inch = feet/12;
      return inch;
  }
  
  const findinch = feetToInch(1);
- console.log(findinch); */
+ console.log(findinch); 
 
  //crntimeter to meter
  function centimeterToMeter(centimeter){

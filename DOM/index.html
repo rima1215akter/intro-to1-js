@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .fruits-container li{
+            color: rgb(98, 98, 56);
+        }
+        #fruits-title{
+             color: blueviolet;
+        }
+        .places-title{
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Deserunt dolore nulla mollitia dolorem cumque, 
+            cupiditate incidunt odio quidem exercitationem sequi. 
+        </p>
+    </header>
+    <main id="main container">
+        <section>
+            <h1>My Awesome DOM</h1>
+        <ul>
+            <li>vat</li>
+            <li>khabo</li>
+            <li>na</li>
+            <li>chaile aro sadte paro</li>
+        </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class blue-class">I like fruits</h1>
+            <ul>
+                <li class="title">Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1>Places I like to visit</h1>
+            <ul id="places-list">
+                <li class="places-title">Sondarban</li>
+                <li class="places-title">bandorban</li>
+                <li class="places-title">kataban</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Places I like</h1>
+            <ul>
+                <li>Son</li>
+                <li>ban</li>
+                <li>kata</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleInJs.js"></script>
+    <script>
+/*          const student ={
+            name: 'Rima',
+            id: 1215,
+            study: function(time){
+                console.log(time, 'study at NUB');
+            }
+        }
+        console.log('adding js file'); */
+
+        //option-1: getElementByTagName
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            //  console.log(li);
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            // console.log(h1.innerText);
+        }
+        //option-2: getElementById
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText= 'fruits change by js';
+
+        //option-3: getElementsByClassName
+        const places = document.getElementsByClassName('places-title');
+        for(const place of places){
+            //  console.log(place);
+            // console.log(place.innerText);
+        }
+
+        //option-4: querySelectorAll
+        const someLi = document.querySelectorAll('.fruits-container li');
+
+        //option-5: querySelector
+        // const someLi = document.querySelector('.fruits-container li');
+        for(const li of someLi){
+            // console.log(li.innerText);
+        }
+     
+    </script>
+</body>
+</html>
